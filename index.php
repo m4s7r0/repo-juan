@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 
 include_once("lib/EpiCurl.php");
 include_once("lib/EpiOAuth.php");
