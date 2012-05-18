@@ -15,7 +15,7 @@ $msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/ sav
 		$url = $twitterObj->getAuthorizationUrl();
 		$html = file_get_contents("home.html");
 		$html = str_replace("{URL}", $url, $html);
-		$html = str_replace("{TWEET} ASD", $msg, $html);
+		$html = str_replace("{TWEET}", $msg, $html);
 		print($html);
 	}
 	else
