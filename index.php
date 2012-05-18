@@ -1,5 +1,6 @@
 <?php
 //session_start();
+error_reporting(E_ALL ^ E_NOTICE);
 
 include_once("lib/EpiCurl.php");
 include_once("lib/EpiOAuth.php");
@@ -12,7 +13,7 @@ if(isset($_GET["oauth_token"]))
 else
 	$oauth_token = '';
 
-$msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/ saving up to $550 on a Lenovo IdeaPad Z570!!";
+$msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/ saving up to $550 on a Lenovo IdeaPad Z570!";
 
 	if($oauth_token == '')
 	{
