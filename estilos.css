@@ -1,0 +1,149 @@
+body
+{
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+p
+{
+	font-size:12px;
+}
+
+h1
+{
+	font-size:20px;
+	font-weight: normal;
+	line-height: 20px;
+}
+
+a
+{
+	font-size:12px;
+	text-decoration:none;
+	color:#009DD9;
+}
+
+a:hover
+{
+	text-decoration:underline;
+}
+
+.breadcrumb a, .lt
+{
+	color:#009DD9 !important;
+	font-size: 11px;
+	text-decoration:none;
+	font-weight: normal;
+	margin:2px;
+	line-height:30px;
+}
+
+.todo
+{
+	width:930px;
+	margin:0px auto;
+	text-align:left;
+}
+
+a.blacklink
+{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.blacklink:hover
+{	
+	text-decoration: underline;
+	color: black;
+	font-weight: bold;
+}
+
+.producto
+{
+	text-align:center;
+	color:#999;
+	font-size:12px;
+}
+
+.producto tr td
+{
+padding-bottom:5px;
+}
+
+.green
+{
+	color:#6BAE01;
+}
+
+.price_cell
+{
+	font-weight:bold;
+	color:#000;
+	text-align:left;
+}
+
+.savings
+{
+	font-family:Verdana,arial,sans-serif;
+	font-weight:bold;
+	color:#F60;
+	text-align:left;
+	font-size:11px;
+}
+
+.col-izq
+{
+	float:left;
+	padding-top:10px;
+	margin-left:70px;
+}
+.col-der
+{
+	padding-top:20px;
+	margin-left:40px;
+	float:left;
+}
+
+.clear
+{
+	clear:both;
+}
+
+.twitter
+{
+	background:url('./imgs/twitter.png') no-repeat;
+	width:506px;
+	height:106px;
+	margin:0px auto;
+}
+
+.texto_twitter
+{
+	font-size:14px;
+	padding-left:15px;
+	padding-top:15px;
+	width:480px;
+	height:60px;
+}
+
+.download
+{
+	text-align:center;
+	font-weight:normal;
+}
+.download a
+{
+	font-size:20px;
+}
+
+.user_download
+{
+	margin-top:20px;
+	text-align:center;
+}
+
+.url_download a
+{
+	font-size:14px;
+}
