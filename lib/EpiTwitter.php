@@ -6,8 +6,8 @@ class EpiTwitter extends EpiOAuth
   protected $requestTokenUrl = 'http://api.twitter.com/oauth/request_token';
   protected $accessTokenUrl = 'http://api.twitter.com/oauth/access_token';
   protected $authorizeUrl = 'http://api.twitter.com/oauth/authorize';
-  protected $apiUrl = 'http://api.twitter.com/1/';
-//upload
+  protected $apiUrl = 'http://api.twitter.com/1';
+
   public function __call($name, $params = null)
   {
     $parts  = explode('_', $name);

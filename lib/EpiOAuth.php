@@ -143,10 +143,7 @@ class EpiOAuth
     $urlParts = parse_url($url);
     $scheme = strtolower($urlParts['scheme']);
     $host   = strtolower($urlParts['host']);
-    if(isset($urlParts['port']))
-      $port = intval($urlParts['port']);
-    else
-    	$port = '';
+    $port = intval($urlParts['port']);
 
     $retval = "{$scheme}://{$host}";
     if($port > 0 && ($scheme === 'http' && $port !== 80) || ($scheme === 'https' && $port !== 443))
