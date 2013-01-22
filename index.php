@@ -36,9 +36,9 @@ $msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/inde
 
 		$update_status = $twitterObj->post_statusesUpdate(array("status" => $msg));
 		$temp = $update_status->response;
-		print_r($temp);
+		//print_r($temp);
 		if(array_key_exists('error', $temp) || array_key_exists('errors', $temp))
-			echo("There was a problem");
+			echo("You can't tweet the same again!");
 		else
 		{
 			$username = $twitterInfo->screen_name;
