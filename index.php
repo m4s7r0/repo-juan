@@ -1,5 +1,6 @@
 <?php
-session_start();
+//session_start();
+error_reporting(E_ALL ^ E_NOTICE);
 
 include_once("lib/EpiCurl.php");
 include_once("lib/EpiOAuth.php");
@@ -7,8 +8,12 @@ include_once("lib/EpiTwitter.php");
 include_once("lib/secret.php");
 
 $twitterObj = new EpiTwitter($consumer_key, $consumer_secret);
-$oauth_token = $_GET["oauth_token"];
-$msg = "I have downloaded an eCoupon from www.ramollino.com.ar/LenovoTest/ saving up to $550 on a Lenovo IdeaPad Z570!!";
+if(isset($_GET["oauth_token"]))
+	$oauth_token = $_GET["oauth_token"];
+else
+	$oauth_token = '';
+
+$msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/ saving up to $550 on a Lenovo IdeaPad Z570!!";
 
 	if($oauth_token == '')
 	{
