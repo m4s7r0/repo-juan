@@ -13,7 +13,7 @@ if(isset($_GET["oauth_token"]))
 else
 	$oauth_token = '';
 
-$msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/ saving up to $550 on a Lenovo IdeaPad Z570!!";
+$msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/index.php saving up to $550 on a Lenovo IdeaPad Z570!!";
 
 	if($oauth_token == '')
 	{
@@ -36,7 +36,7 @@ $msg = "I have downloaded an eCoupon from http://lenovo-promos.orchestra.io/ sav
 
 		$update_status = $twitterObj->post_statusesUpdate(array("status" => $msg));
 		$temp = $update_status->response;
-		//print_r($temp);
+		print_r($temp);
 		if(array_key_exists('error', $temp) || array_key_exists('errors', $temp))
 			echo("There was a problem");
 		else
